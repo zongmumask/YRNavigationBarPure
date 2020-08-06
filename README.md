@@ -3,7 +3,7 @@ YRNavigationBarPure [中文介绍](https://github.com/zongmumask/YRNavigationBar
 
 All UIViewControllers use the same UINavigationBar as child controllers of UINavigationControler. The setting of UIViewController determines the transition effect of UINavigationBar when pushing or poping. when one of the UIviewcontrollers sets the uinavigationbar to hidden , sometimes this transition effect is not so friendly.
 
-YRNavigationBarPure hides the UINavigationBar through sendSubviewToBack:, and generates a screenshot of UINavigationbar for every UIViewController. When pushing or poping happens, the screenshot is added to the view of the UIViewController, so that each UIViewcontroller seems to have an independent UINavigationBar.
+YRNavigationBarPure hides the UINavigationBar through `sendSubviewToBack:`, and generates a screenshot of UINavigationbar for every UIViewController. When pushing or poping happens, the screenshot is added to the view of the UIViewController, so that each UIViewcontroller seems to have an independent UINavigationBar.
 
 ## Usage
 
