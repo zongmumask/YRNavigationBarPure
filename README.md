@@ -1,7 +1,7 @@
-YRNavigationBarPure [中文介绍]()
+YRNavigationBarPure [中文介绍](https://github.com/zongmumask/YRNavigationBarPure/blob/master/README_CN.md)
 ============
 
-As the container of UIViewController, UINavigationController has only one UINavigationBar. The setting of UIViewController determines the transition effect of UINavigationBar when pushing of poping. when one of the UIviewcontrollers sets the uinavigationbar to hidden , sometimes this transition effect is not so friendly.
+All UIViewControllers use the same UINavigationBar as child controllers of UINavigationControler. The setting of UIViewController determines the transition effect of UINavigationBar when pushing of poping. when one of the UIviewcontrollers sets the uinavigationbar to hidden , sometimes this transition effect is not so friendly.
 
 YRNavigationBarPure hides the UINavigationBar through sendSubviewToBack:, and generates a screenshot of UINavigationbar for every UIViewController. When pushing or poping happens, the screenshot is added to the view of the UIViewController, so that each UIViewcontroller seems to have an independent UINavigationBar.
 
@@ -25,5 +25,9 @@ UINavigationController has one extended a property
 `allowFullScreenInteractivePop` default is `NO`, set to `YES` if you need to turn on the full screen swiping back
 
 ## Requirements
+
 - iOS 9.0
+
 ## License
+
+YRNavigationBarPure is released under the MIT license. See (LICENSE)[https://github.com/zongmumask/YRNavigationBarPure/edit/master/LICENSE] for details.
