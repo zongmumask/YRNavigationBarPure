@@ -12,14 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (PureTransition)
 
-@property (nonatomic, assign) BOOL prefersNavigationBarHidden;
-@property (nonatomic, assign) BOOL interactivePopDisabled;
+@property (nonatomic, assign) BOOL yr_prefersNavigationBarHidden;
+@property (nonatomic, assign) BOOL yr_interactivePopDisabled;
 
 @end
 
 @interface UINavigationController (PureTransition)
 
-@property (nonatomic, assign) BOOL allowFullScreenInteractivePop;
+@property (nonatomic, assign) BOOL yr_allowFullScreenInteractivePop;
 
 @end
 

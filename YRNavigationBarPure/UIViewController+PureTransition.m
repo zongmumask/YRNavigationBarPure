@@ -77,7 +77,7 @@ static void YRSwizzleMethod(Class cls, SEL originalSEL, SEL swizzledSEL) {
         return NO;
     }
     
-    if (self.navigationController.allowFullScreenInteractivePop) {
+    if (self.navigationController.yr_allowFullScreenInteractivePop) {
         return YES;
     }
     
@@ -107,8 +107,8 @@ static void YRSwizzleMethod(Class cls, SEL originalSEL, SEL swizzledSEL) {
 
 @implementation UIViewController (PureTransition)
 
-ASSOCIATED_BOOL(prefersNavigationBarHidden, setPrefersNavigationBarHidden, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-ASSOCIATED_BOOL(interactivePopDisabled, setInteractivePopDisabled, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+ASSOCIATED_BOOL(yr_prefersNavigationBarHidden, setYr_prefersNavigationBarHidden, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+ASSOCIATED_BOOL(yr_interactivePopDisabled, setYr_interactivePopDisabled, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 ASSOCIATED(navigationBarSnapshotView, setNavigationBarSnapshotView, UIImageView *, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
@@ -137,7 +137,7 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
         [self.view addSubview:self.navigationBarSnapshotView];
     }
     
-    [self.navigationController setNavigationBarHidden:self.prefersNavigationBarHidden animated:NO];
+    [self.navigationController setNavigationBarHidden:self.yr_prefersNavigationBarHidden animated:NO];
     
     [self.navigationController.view sendSubviewToBack:self.navigationController.navigationBar];
 }
@@ -188,14 +188,14 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
         [self.navigationBarSnapshotView removeFromSuperview];
     }
     
-    self.navigationController.panGestureRecognizer.enabled = !self.interactivePopDisabled;
+    self.navigationController.panGestureRecognizer.enabled = !self.yr_interactivePopDisabled;
     
     [self.navigationController.view bringSubviewToFront:self.navigationController.navigationBar];
 }
 
 - (void)savaNavigationBarStateIfNeeded
 {
-    if (self.prefersNavigationBarHidden || self.navigationBarState) {
+    if (self.yr_prefersNavigationBarHidden || self.navigationBarState) {
         return;
     }
     
@@ -206,7 +206,7 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
 
 - (void)restoreNavigationBarState
 {
-    if (self.prefersNavigationBarHidden) {
+    if (self.yr_prefersNavigationBarHidden) {
         return;
     }
     
@@ -216,7 +216,7 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
 
 - (BOOL)shouldGenerateNavigationBarImageView
 {
-    return (self.navigationController && !self.navigationBarSnapshotView && !self.prefersNavigationBarHidden);
+    return (self.navigationController && !self.navigationBarSnapshotView && !self.yr_prefersNavigationBarHidden);
 }
 
 @end
@@ -225,7 +225,7 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
 
 ASSOCIATED(panGestureRecognizer, setPanGestureRecognizer, UIPanGestureRecognizer *, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 ASSOCIATED(panGestureRecognizerDelegate, setPanGestureRecognizerDelegate, UIPanGestureRecognizer *, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-ASSOCIATED_BOOL(allowFullScreenInteractivePop, setAllowFullScreenInteractivePop, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+ASSOCIATED_BOOL(yr_allowFullScreenInteractivePop, setYr_allowFullScreenInteractivePop, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 
 + (void)load
 {
