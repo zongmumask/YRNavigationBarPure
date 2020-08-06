@@ -48,6 +48,7 @@ static void YRSwizzleMethod(Class cls, SEL originalSEL, SEL swizzledSEL) {
 @interface YRNavigationBarState : NSObject
 
 @property (nonatomic, strong) UIColor *barTintColor;
+@property (nonatomic, strong) UIImage *backgroundImage;
 
 @end
 
@@ -163,7 +164,7 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
         return;
     }
     
-    if ([self shouldGenerateNavigationBarImageView]) {
+    if (self.navigationController.viewControllers.firstObject != self && [self shouldGenerateNavigationBarImageView]) {
         UIImageView *navigationBarSnapshot = [[UIImageView alloc] initWithFrame:self.navigationController.navigationBar.visibleBoundry];
         navigationBarSnapshot.image = [self.navigationController.navigationBar snapshotImageClipsToBounds:NO];
         self.navigationBarSnapshotView = navigationBarSnapshot;
@@ -180,6 +181,12 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
     
     if (!self.navigationController) {
         return;
+    }
+    
+    if ([self shouldGenerateNavigationBarImageView] && !self.navigationBarSnapshotView) {
+        UIImageView *navigationBarSnapshot = [[UIImageView alloc] initWithFrame:self.navigationController.navigationBar.visibleBoundry];
+        navigationBarSnapshot.image = [self.navigationController.navigationBar snapshotImageClipsToBounds:NO];
+        self.navigationBarSnapshotView = navigationBarSnapshot;
     }
     
     [self restoreNavigationBarState];
@@ -202,6 +209,7 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
     self.navigationBarState = [[YRNavigationBarState alloc] init];
     self.navigationBarState.barTintColor = navigationBar.barTintColor;
+    self.navigationBarState.backgroundImage = [navigationBar backgroundImageForBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)restoreNavigationBarState
@@ -212,6 +220,7 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
     
     UINavigationBar *navigationBar = self.navigationController.navigationBar;
     navigationBar.barTintColor = self.navigationBarState.barTintColor;
+    [navigationBar setBackgroundImage:self.navigationBarState.backgroundImage forBarMetrics:UIBarMetricsDefault];
 }
 
 - (BOOL)shouldGenerateNavigationBarImageView
