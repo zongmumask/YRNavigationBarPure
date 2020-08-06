@@ -1,8 +1,6 @@
 YRNavigationBarPure [中文介绍]()
 ============
 
-## Introduction
-
 As the container of UIViewController, UINavigationController has only one UINavigationBar. The setting of UIViewController determines the transition effect of UINavigationBar when pushing of poping. when one of the UIviewcontrollers sets the uinavigationbar to hidden , sometimes this transition effect is not so friendly.
 
 YRNavigationBarPure hides the UINavigationBar through sendSubviewToBack:, and generates a screenshot of UINavigationbar for every UIViewController. When pushing or poping happens, the screenshot is added to the view of the UIViewController, so that each UIViewcontroller seems to have an independent UINavigationBar.
