@@ -48,4 +48,4 @@ $ pod install
 
 ## License
 
-YRNavigationBarPure is released under the MIT license. See (LICENSE)[https://github.com/zongmumask/YRNavigationBarPure/edit/master/LICENSE] for details.
+YRNavigationBarPure is released under the MIT license. See [LICENSE](https://github.com/zongmumask/YRNavigationBarPure/edit/master/LICENSE) for details.
