@@ -10,13 +10,11 @@ YRNavigationBarPure通过`sendSubviewToBack:`将UINavigationBar隐藏起来，�
 ### 原生
 
 ![Pure](https://github.com/zongmumask/YRNavigationBarPure/blob/master/Screenshots/original_without_navigationbar_hidden.gif)
-
 ![Pure](https://github.com/zongmumask/YRNavigationBarPure/blob/master/Screenshots/original_with_navigationbar_hidden.gif)
 
 ### 现在
 
 ![](https://github.com/zongmumask/YRNavigationBarPure/blob/master/Screenshots/pure_without_navigationbar_hidden.gif)
-
 ![](https://github.com/zongmumask/YRNavigationBarPure/blob/master/Screenshots/pure_with_navigationbar_hidden.gif)
 
 ## 使用
