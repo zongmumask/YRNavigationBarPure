@@ -5,6 +5,20 @@ UINavigationController作为容器所有的UIViewController都使用同一个UIN
 
 YRNavigationBarPure通过`sendSubviewToBack:`将UINavigationBar隐藏起来，并为每个UIViewcontroller生成一个UINavigationBar的截图，转场时将截图加在UIViewController的view上，让每个UIviewcontroller看起来拥有一个独立的UINavigationBar。
 
+## 效果图
+
+### 原生
+
+![Pure](https://github.com/zongmumask/YRNavigationBarPure/blob/master/Screenshots/original_without_navigationbar_hidden.gif)
+
+![Pure](https://github.com/zongmumask/YRNavigationBarPure/blob/master/Screenshots/original_with_navigatioinbar_hidden.gif)
+
+### 现在
+
+![](https://github.com/zongmumask/YRNavigationBarPure/blob/master/Screenshots/pure_without_navigationbar_hidden.gif)
+
+![](https://github.com/zongmumask/YRNavigationBarPure/blob/master/Screenshots/pure_with_navigationbar_hidden.gif)
+
 ## 使用
 
 为UIViewcController新增了两个扩展属性，需要在viewDidLoad里完成对导航栏的设置，你只需要关注当前UIViewController的导航栏样式而无需关心何时还原设置，YRNavigationBarPure会管理好这一切。
