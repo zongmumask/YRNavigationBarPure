@@ -5,6 +5,11 @@ All UIViewControllers use the same UINavigationBar as child controllers of UINav
 
 YRNavigationBarPure hides the UINavigationBar through `sendSubviewToBack:`, and generates a screenshot of UINavigationbar for every UIViewController. When pushing or poping happens, the screenshot is added to the view of the UIViewController, so that each UIViewcontroller seems to have an independent UINavigationBar.
 
+## Screenshots
+
+### Original
+![YRNavigationBarPure](https://github.com/zongmumask/YRNavigationBarPure/blob/master/Screenshots/original_without_navigationbar_hidden.gif)
+![YRNavigationBarPure](https://github.com/zongmumask/YRNavigationBarPure/blob/master/Screenshots/original_with_navigatioinbar_hidden.gif)
 ## Usage
 
 Two extended properties have been added for UIViewController. You need to complete the navigation bar's settings in `viewDidLoad`. You only need to focus on the navigation bar style of the current UIViewController without worrying about restoring settings. `YRNavigationBarPure` will manage all this.
