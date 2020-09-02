@@ -1,0 +1,6 @@
+framework module YRNavigationBarPure {
+  umbrella header "YRNavigationBarPure-umbrella.h"
+
+  export *
+  module * { export * }
+}

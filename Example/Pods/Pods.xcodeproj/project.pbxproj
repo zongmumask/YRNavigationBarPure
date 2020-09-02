@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D4DE4990B25F814A7CAC961D6DFA84D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		233241B71EEA9FE3A9DCF819B0D7A002 /* YRNavigationBarPure-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC4ED6CA31B430E6737860585498B6EF /* YRNavigationBarPure-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28366492BF2F2EF757686FD5F5676DEF /* Pods-YRNavigationBarPure_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8358F9E69293290DA7BB6C724BAF488D /* Pods-YRNavigationBarPure_Example-dummy.m */; };
+		2DB48FC42860AF98D8D3C928A6947E22 /* Pods-YRNavigationBarPure_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 869C76A9C39694F3538D70990133DDAF /* Pods-YRNavigationBarPure_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BBFEB9007EE2DF401FF0B0FB9218B29 /* YRNavigationBarPure-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40959A6794604B957105381BEC44C282 /* YRNavigationBarPure-dummy.m */; };
+		40E39A4B04059F850661B4E792652D81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		576032357AF225CC6ED993CF424EC9AE /* UIViewController+PureTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = A6C31E9DCE52B76A03D74F5F8B9233A9 /* UIViewController+PureTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63EE3BDCBCE06E9DAB9909B67449C48C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		771CCD374B93B620D9A7E3F6F29C2219 /* Pods-YRNavigationBarPure_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1BFF535E0D3EF742D96FEF08B5AE68 /* Pods-YRNavigationBarPure_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BA135E242E888720E2511F08AA30EAB /* Pods-YRNavigationBarPure_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB917E5AA5737B918ED9862DDDFEADDE /* Pods-YRNavigationBarPure_Tests-dummy.m */; };
+		9BD045B6B7E9E5E33ECD567EBCFE5798 /* UIView+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = E2B6D4C749E5FDDC3D3D1AD244998836 /* UIView+Snapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B614DC63C26C0E99E60CF6053A8CC5B8 /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 132AFB90AB8BF7D1F3804A74634FD6D7 /* UIView+Snapshot.m */; };
+		BA27346336C35F3D9B6700A1758EE5FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		C1B1F3930DD7BEAF58525DDA990BA1D8 /* UIViewController+PureTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = F9C86910DDDA42ED495FFF6E944A298C /* UIViewController+PureTransition.m */; };
+		CE0353055569FD59F7D3044BF546884B /* YRNavigationBarPure.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BC55A9BD3FDECF3035C334021B449A9 /* YRNavigationBarPure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2107772C63E2E19CBD973C7D6D113470 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2110421CB16603B8C8B98766FFB7949;
+			remoteInfo = YRNavigationBarPure;
+		};
+		4A8F5CBE739B40D8022BC9A6EA661A08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C7CCFDC1CD2249B2A755C9EDD57C7C;
+			remoteInfo = "Pods-YRNavigationBarPure_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0310573AB0FF007C8C9BB24E435C8B5E /* Pods-YRNavigationBarPure_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YRNavigationBarPure_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0C772EE4257E255FEF1C984F5BFA8818 /* YRNavigationBarPure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YRNavigationBarPure.framework; path = YRNavigationBarPure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		132AFB90AB8BF7D1F3804A74634FD6D7 /* UIView+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Snapshot.m"; path = "YRNavigationBarPure/UIView+Snapshot.m"; sourceTree = "<group>"; };
+		1B183C0FAAC59AADDA41722A060B6CEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1F6B3F94858D587B99FB20CDE30D7229 /* Pods-YRNavigationBarPure_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YRNavigationBarPure_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2D9749411057FA3D0C879508D3FB4C47 /* Pods-YRNavigationBarPure_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YRNavigationBarPure_Example.release.xcconfig"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3B02F2B26A73C34159F5D3A12844AA3E /* YRNavigationBarPure-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YRNavigationBarPure-prefix.pch"; sourceTree = "<group>"; };
+		3BC55A9BD3FDECF3035C334021B449A9 /* YRNavigationBarPure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YRNavigationBarPure.h; path = YRNavigationBarPure/YRNavigationBarPure.h; sourceTree = "<group>"; };
+		3D475AE09AE186A08F66DD9E0471CDE4 /* Pods-YRNavigationBarPure_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YRNavigationBarPure_Tests.modulemap"; sourceTree = "<group>"; };
+		3D4F8F4BA9F87B1704630BB5CF766A62 /* Pods-YRNavigationBarPure_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YRNavigationBarPure_Example-Info.plist"; sourceTree = "<group>"; };
+		40959A6794604B957105381BEC44C282 /* YRNavigationBarPure-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YRNavigationBarPure-dummy.m"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		58872A4AE3A795D959F158D43E8521A5 /* Pods-YRNavigationBarPure_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YRNavigationBarPure_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6400496D3A58D62B525D855837E71C34 /* Pods_YRNavigationBarPure_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YRNavigationBarPure_Example.framework; path = "Pods-YRNavigationBarPure_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B1BFF535E0D3EF742D96FEF08B5AE68 /* Pods-YRNavigationBarPure_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YRNavigationBarPure_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7D2DB01E6400864720D87F432149C7D4 /* Pods-YRNavigationBarPure_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YRNavigationBarPure_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8358F9E69293290DA7BB6C724BAF488D /* Pods-YRNavigationBarPure_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YRNavigationBarPure_Example-dummy.m"; sourceTree = "<group>"; };
+		869C76A9C39694F3538D70990133DDAF /* Pods-YRNavigationBarPure_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YRNavigationBarPure_Example-umbrella.h"; sourceTree = "<group>"; };
+		88388A973F0E0643691CDA9456F32890 /* YRNavigationBarPure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YRNavigationBarPure.release.xcconfig; sourceTree = "<group>"; };
+		8B34C580756D8487E280B3B1BABA94BA /* Pods-YRNavigationBarPure_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YRNavigationBarPure_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8CD57EFF91456F91229639EEC06A2E3A /* Pods-YRNavigationBarPure_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YRNavigationBarPure_Tests-Info.plist"; sourceTree = "<group>"; };
+		93AEA1C118B1F397D788F0D9059C74BA /* Pods-YRNavigationBarPure_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YRNavigationBarPure_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9A75419FF09A441DCCCB4DB8A36FA97F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A36551E5E0F9907457C7D8044BED53F1 /* YRNavigationBarPure.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YRNavigationBarPure.modulemap; sourceTree = "<group>"; };
+		A6C31E9DCE52B76A03D74F5F8B9233A9 /* UIViewController+PureTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+PureTransition.h"; path = "YRNavigationBarPure/UIViewController+PureTransition.h"; sourceTree = "<group>"; };
+		AC1CACE702026CC8E20D2FDA3AD3B3A2 /* YRNavigationBarPure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YRNavigationBarPure.debug.xcconfig; sourceTree = "<group>"; };
+		AF67E3CB084404882A66ECBFEE6740E0 /* Pods-YRNavigationBarPure_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YRNavigationBarPure_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B6D4F9F8651BBB4EC3C4B4A220B73A45 /* Pods-YRNavigationBarPure_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YRNavigationBarPure_Example.modulemap"; sourceTree = "<group>"; };
+		E2B6D4C749E5FDDC3D3D1AD244998836 /* UIView+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Snapshot.h"; path = "YRNavigationBarPure/UIView+Snapshot.h"; sourceTree = "<group>"; };
+		EB917E5AA5737B918ED9862DDDFEADDE /* Pods-YRNavigationBarPure_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YRNavigationBarPure_Tests-dummy.m"; sourceTree = "<group>"; };
+		EE2940914CB320078C906219AAA5B2ED /* YRNavigationBarPure-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YRNavigationBarPure-Info.plist"; sourceTree = "<group>"; };
+		EFE0D31807F8BCCD09A4A1D0E4415B0B /* YRNavigationBarPure.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = YRNavigationBarPure.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F0DA38043CBC9FD3EE13BCBC1A5301CF /* Pods-YRNavigationBarPure_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YRNavigationBarPure_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9C86910DDDA42ED495FFF6E944A298C /* UIViewController+PureTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+PureTransition.m"; path = "YRNavigationBarPure/UIViewController+PureTransition.m"; sourceTree = "<group>"; };
+		FB80C6142C1D0AB378B9AA1E26681209 /* Pods_YRNavigationBarPure_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YRNavigationBarPure_Tests.framework; path = "Pods-YRNavigationBarPure_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4ED6CA31B430E6737860585498B6EF /* YRNavigationBarPure-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YRNavigationBarPure-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63C6B0ED9274E1B93DE562FC35A89806 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63EE3BDCBCE06E9DAB9909B67449C48C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81881DD33DC0E0E922D9779B798EF6DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA27346336C35F3D9B6700A1758EE5FA /* Foundation.framework in Frameworks */,
+				40E39A4B04059F850661B4E792652D81 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF10A9E266AFBDF9168CEEF988F70C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D4DE4990B25F814A7CAC961D6DFA84D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06BD985C715FC4D45C0387AB0297AE81 /* Pods-YRNavigationBarPure_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3D475AE09AE186A08F66DD9E0471CDE4 /* Pods-YRNavigationBarPure_Tests.modulemap */,
+				7D2DB01E6400864720D87F432149C7D4 /* Pods-YRNavigationBarPure_Tests-acknowledgements.markdown */,
+				F0DA38043CBC9FD3EE13BCBC1A5301CF /* Pods-YRNavigationBarPure_Tests-acknowledgements.plist */,
+				EB917E5AA5737B918ED9862DDDFEADDE /* Pods-YRNavigationBarPure_Tests-dummy.m */,
+				8CD57EFF91456F91229639EEC06A2E3A /* Pods-YRNavigationBarPure_Tests-Info.plist */,
+				7B1BFF535E0D3EF742D96FEF08B5AE68 /* Pods-YRNavigationBarPure_Tests-umbrella.h */,
+				58872A4AE3A795D959F158D43E8521A5 /* Pods-YRNavigationBarPure_Tests.debug.xcconfig */,
+				1F6B3F94858D587B99FB20CDE30D7229 /* Pods-YRNavigationBarPure_Tests.release.xcconfig */,
+			);
+			name = "Pods-YRNavigationBarPure_Tests";
+			path = "Target Support Files/Pods-YRNavigationBarPure_Tests";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29A1E327CC75DC517354548A4DF1BBD2 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65B3AE6FB28EFB6B19B3EEABC4C8C5F9 /* YRNavigationBarPure */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		459C5513FE1945C80AAEBB9DDE5D5022 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1B183C0FAAC59AADDA41722A060B6CEE /* LICENSE */,
+				9A75419FF09A441DCCCB4DB8A36FA97F /* README.md */,
+				EFE0D31807F8BCCD09A4A1D0E4415B0B /* YRNavigationBarPure.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		65B3AE6FB28EFB6B19B3EEABC4C8C5F9 /* YRNavigationBarPure */ = {
+			isa = PBXGroup;
+			children = (
+				E2B6D4C749E5FDDC3D3D1AD244998836 /* UIView+Snapshot.h */,
+				132AFB90AB8BF7D1F3804A74634FD6D7 /* UIView+Snapshot.m */,
+				A6C31E9DCE52B76A03D74F5F8B9233A9 /* UIViewController+PureTransition.h */,
+				F9C86910DDDA42ED495FFF6E944A298C /* UIViewController+PureTransition.m */,
+				3BC55A9BD3FDECF3035C334021B449A9 /* YRNavigationBarPure.h */,
+				459C5513FE1945C80AAEBB9DDE5D5022 /* Pod */,
+				D0BF784D62133925052BDF8CA9CB9A0F /* Support Files */,
+			);
+			name = YRNavigationBarPure;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		75145D2DEFF5D9AD21145D3B8F068BD9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECFBF147720173E1BEDDA5FC959E4022 /* Pods-YRNavigationBarPure_Example */,
+				06BD985C715FC4D45C0387AB0297AE81 /* Pods-YRNavigationBarPure_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B4142F323C6F610137696BD75668E6BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6400496D3A58D62B525D855837E71C34 /* Pods_YRNavigationBarPure_Example.framework */,
+				FB80C6142C1D0AB378B9AA1E26681209 /* Pods_YRNavigationBarPure_Tests.framework */,
+				0C772EE4257E255FEF1C984F5BFA8818 /* YRNavigationBarPure.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				29A1E327CC75DC517354548A4DF1BBD2 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				B4142F323C6F610137696BD75668E6BC /* Products */,
+				75145D2DEFF5D9AD21145D3B8F068BD9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D0BF784D62133925052BDF8CA9CB9A0F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A36551E5E0F9907457C7D8044BED53F1 /* YRNavigationBarPure.modulemap */,
+				40959A6794604B957105381BEC44C282 /* YRNavigationBarPure-dummy.m */,
+				EE2940914CB320078C906219AAA5B2ED /* YRNavigationBarPure-Info.plist */,
+				3B02F2B26A73C34159F5D3A12844AA3E /* YRNavigationBarPure-prefix.pch */,
+				FC4ED6CA31B430E6737860585498B6EF /* YRNavigationBarPure-umbrella.h */,
+				AC1CACE702026CC8E20D2FDA3AD3B3A2 /* YRNavigationBarPure.debug.xcconfig */,
+				88388A973F0E0643691CDA9456F32890 /* YRNavigationBarPure.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/YRNavigationBarPure";
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		ECFBF147720173E1BEDDA5FC959E4022 /* Pods-YRNavigationBarPure_Example */ = {
+			isa = PBXGroup;
+			children = (
+				B6D4F9F8651BBB4EC3C4B4A220B73A45 /* Pods-YRNavigationBarPure_Example.modulemap */,
+				AF67E3CB084404882A66ECBFEE6740E0 /* Pods-YRNavigationBarPure_Example-acknowledgements.markdown */,
+				93AEA1C118B1F397D788F0D9059C74BA /* Pods-YRNavigationBarPure_Example-acknowledgements.plist */,
+				8358F9E69293290DA7BB6C724BAF488D /* Pods-YRNavigationBarPure_Example-dummy.m */,
+				0310573AB0FF007C8C9BB24E435C8B5E /* Pods-YRNavigationBarPure_Example-frameworks.sh */,
+				3D4F8F4BA9F87B1704630BB5CF766A62 /* Pods-YRNavigationBarPure_Example-Info.plist */,
+				869C76A9C39694F3538D70990133DDAF /* Pods-YRNavigationBarPure_Example-umbrella.h */,
+				8B34C580756D8487E280B3B1BABA94BA /* Pods-YRNavigationBarPure_Example.debug.xcconfig */,
+				2D9749411057FA3D0C879508D3FB4C47 /* Pods-YRNavigationBarPure_Example.release.xcconfig */,
+			);
+			name = "Pods-YRNavigationBarPure_Example";
+			path = "Target Support Files/Pods-YRNavigationBarPure_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		573BD2996E65CD30A37FBFB1C540C3EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				771CCD374B93B620D9A7E3F6F29C2219 /* Pods-YRNavigationBarPure_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7589A09B2E3C158B1501D52DF26B279D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD045B6B7E9E5E33ECD567EBCFE5798 /* UIView+Snapshot.h in Headers */,
+				576032357AF225CC6ED993CF424EC9AE /* UIViewController+PureTransition.h in Headers */,
+				233241B71EEA9FE3A9DCF819B0D7A002 /* YRNavigationBarPure-umbrella.h in Headers */,
+				CE0353055569FD59F7D3044BF546884B /* YRNavigationBarPure.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E15D243787EFC42CFE462D6452F88D19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DB48FC42860AF98D8D3C928A6947E22 /* Pods-YRNavigationBarPure_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B2110421CB16603B8C8B98766FFB7949 /* YRNavigationBarPure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7214B9ACEA415C1B8D17FCF103600D7E /* Build configuration list for PBXNativeTarget "YRNavigationBarPure" */;
+			buildPhases = (
+				7589A09B2E3C158B1501D52DF26B279D /* Headers */,
+				5543A74655D3DCD91F1E050371DBA4FA /* Sources */,
+				81881DD33DC0E0E922D9779B798EF6DB /* Frameworks */,
+				D93C8E66FE7B3093A593A6007F499DBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YRNavigationBarPure;
+			productName = YRNavigationBarPure;
+			productReference = 0C772EE4257E255FEF1C984F5BFA8818 /* YRNavigationBarPure.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B8970427C5CF84BEE2085777E5BD3D77 /* Pods-YRNavigationBarPure_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65FBB368889EC79C82AD8DF6324BCFD7 /* Build configuration list for PBXNativeTarget "Pods-YRNavigationBarPure_Tests" */;
+			buildPhases = (
+				573BD2996E65CD30A37FBFB1C540C3EC /* Headers */,
+				9D907B3F6B84A4E89DE8A58475862DA3 /* Sources */,
+				63C6B0ED9274E1B93DE562FC35A89806 /* Frameworks */,
+				8FA8C24CB7C14ADF50ABFD118054FFEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B62025582EDA503536AB429F01B9FD8 /* PBXTargetDependency */,
+			);
+			name = "Pods-YRNavigationBarPure_Tests";
+			productName = "Pods-YRNavigationBarPure_Tests";
+			productReference = FB80C6142C1D0AB378B9AA1E26681209 /* Pods_YRNavigationBarPure_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6C7CCFDC1CD2249B2A755C9EDD57C7C /* Pods-YRNavigationBarPure_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F99FE7BF5FEA867F31CA7760C3EC14CA /* Build configuration list for PBXNativeTarget "Pods-YRNavigationBarPure_Example" */;
+			buildPhases = (
+				E15D243787EFC42CFE462D6452F88D19 /* Headers */,
+				C4EC0F90A7D6336C2EB51BC074155C16 /* Sources */,
+				AF10A9E266AFBDF9168CEEF988F70C7E /* Frameworks */,
+				8E116302D56FD0AA22BD917F26C4057A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				972EEFBD516B28CC2D3E2E85A62811BA /* PBXTargetDependency */,
+			);
+			name = "Pods-YRNavigationBarPure_Example";
+			productName = "Pods-YRNavigationBarPure_Example";
+			productReference = 6400496D3A58D62B525D855837E71C34 /* Pods_YRNavigationBarPure_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B4142F323C6F610137696BD75668E6BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6C7CCFDC1CD2249B2A755C9EDD57C7C /* Pods-YRNavigationBarPure_Example */,
+				B8970427C5CF84BEE2085777E5BD3D77 /* Pods-YRNavigationBarPure_Tests */,
+				B2110421CB16603B8C8B98766FFB7949 /* YRNavigationBarPure */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E116302D56FD0AA22BD917F26C4057A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FA8C24CB7C14ADF50ABFD118054FFEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D93C8E66FE7B3093A593A6007F499DBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5543A74655D3DCD91F1E050371DBA4FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B614DC63C26C0E99E60CF6053A8CC5B8 /* UIView+Snapshot.m in Sources */,
+				C1B1F3930DD7BEAF58525DDA990BA1D8 /* UIViewController+PureTransition.m in Sources */,
+				3BBFEB9007EE2DF401FF0B0FB9218B29 /* YRNavigationBarPure-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D907B3F6B84A4E89DE8A58475862DA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BA135E242E888720E2511F08AA30EAB /* Pods-YRNavigationBarPure_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EC0F90A7D6336C2EB51BC074155C16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28366492BF2F2EF757686FD5F5676DEF /* Pods-YRNavigationBarPure_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B62025582EDA503536AB429F01B9FD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-YRNavigationBarPure_Example";
+			target = F6C7CCFDC1CD2249B2A755C9EDD57C7C /* Pods-YRNavigationBarPure_Example */;
+			targetProxy = 4A8F5CBE739B40D8022BC9A6EA661A08 /* PBXContainerItemProxy */;
+		};
+		972EEFBD516B28CC2D3E2E85A62811BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YRNavigationBarPure;
+			target = B2110421CB16603B8C8B98766FFB7949 /* YRNavigationBarPure */;
+			targetProxy = 2107772C63E2E19CBD973C7D6D113470 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02C1AF2829B3C19820A4D76B8B5E8D52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9749411057FA3D0C879508D3FB4C47 /* Pods-YRNavigationBarPure_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YRNavigationBarPure_Example/Pods-YRNavigationBarPure_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YRNavigationBarPure_Example/Pods-YRNavigationBarPure_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0EB157D0F8E3DB8C214252492799147D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B34C580756D8487E280B3B1BABA94BA /* Pods-YRNavigationBarPure_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YRNavigationBarPure_Example/Pods-YRNavigationBarPure_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YRNavigationBarPure_Example/Pods-YRNavigationBarPure_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3040600257225DD1729432D36E272E47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6B3F94858D587B99FB20CDE30D7229 /* Pods-YRNavigationBarPure_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YRNavigationBarPure_Tests/Pods-YRNavigationBarPure_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YRNavigationBarPure_Tests/Pods-YRNavigationBarPure_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42129CB0948D245CCD21040007DC925D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC1CACE702026CC8E20D2FDA3AD3B3A2 /* YRNavigationBarPure.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YRNavigationBarPure/YRNavigationBarPure-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YRNavigationBarPure/YRNavigationBarPure-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YRNavigationBarPure/YRNavigationBarPure.modulemap";
+				PRODUCT_MODULE_NAME = YRNavigationBarPure;
+				PRODUCT_NAME = YRNavigationBarPure;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8D9C7DFD3CE1531C3CA7C45178E10702 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88388A973F0E0643691CDA9456F32890 /* YRNavigationBarPure.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YRNavigationBarPure/YRNavigationBarPure-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YRNavigationBarPure/YRNavigationBarPure-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YRNavigationBarPure/YRNavigationBarPure.modulemap";
+				PRODUCT_MODULE_NAME = YRNavigationBarPure;
+				PRODUCT_NAME = YRNavigationBarPure;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F2BC3C0EDF34EC27B92E3A7E83CF0926 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58872A4AE3A795D959F158D43E8521A5 /* Pods-YRNavigationBarPure_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YRNavigationBarPure_Tests/Pods-YRNavigationBarPure_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YRNavigationBarPure_Tests/Pods-YRNavigationBarPure_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65FBB368889EC79C82AD8DF6324BCFD7 /* Build configuration list for PBXNativeTarget "Pods-YRNavigationBarPure_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BC3C0EDF34EC27B92E3A7E83CF0926 /* Debug */,
+				3040600257225DD1729432D36E272E47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7214B9ACEA415C1B8D17FCF103600D7E /* Build configuration list for PBXNativeTarget "YRNavigationBarPure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42129CB0948D245CCD21040007DC925D /* Debug */,
+				8D9C7DFD3CE1531C3CA7C45178E10702 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F99FE7BF5FEA867F31CA7760C3EC14CA /* Build configuration list for PBXNativeTarget "Pods-YRNavigationBarPure_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0EB157D0F8E3DB8C214252492799147D /* Debug */,
+				02C1AF2829B3C19820A4D76B8B5E8D52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

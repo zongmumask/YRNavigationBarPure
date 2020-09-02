@@ -1,0 +1,16 @@
+PODS:
+  - YRNavigationBarPure (0.0.2)
+
+DEPENDENCIES:
+  - YRNavigationBarPure (from `../`)
+
+EXTERNAL SOURCES:
+  YRNavigationBarPure:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YRNavigationBarPure: b97480f984949e059eced6a5095ee58b16de43f7
+
+PODFILE CHECKSUM: 1a2f319a9b309ec1fc6b90dcd5e2077904509c25
+
+COCOAPODS: 1.9.3
