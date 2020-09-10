@@ -128,19 +128,18 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
 {
     [self yr_viewWillAppear:animated];
     
-    if (!self.navigationController) {
+    [self.navigationController setNavigationBarHidden:self.yr_prefersNavigationBarHidden animated:NO];
+    [self savaNavigationBarStateIfNeeded];
+
+    if (![self shouldGenerateNavigationBarImageView]) {
         return;
     }
-    
-    [self savaNavigationBarStateIfNeeded];
     
     if (self.navigationBarSnapshotView && !self.navigationBarSnapshotView.superview) {
         [self.view addSubview:self.navigationBarSnapshotView];
     }
     
-    [self.navigationController setNavigationBarHidden:self.yr_prefersNavigationBarHidden animated:NO];
-    
-    [self.navigationController.view sendSubviewToBack:self.navigationController.navigationBar];
+    [self sendNavigationBarToBackIfNeeded];
 }
 
 - (void)yr_viewWillDisappear:(BOOL)animated
@@ -165,7 +164,7 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
     }
     
     if (self.navigationController.viewControllers.firstObject != self && [self shouldGenerateNavigationBarImageView]) {
-        UIImageView *navigationBarSnapshot = [[UIImageView alloc] initWithFrame:self.navigationController.navigationBar.visibleBoundry];
+        UIImageView *navigationBarSnapshot = [[UIImageView alloc] initWithFrame:self.navigationController.navigationBar.visibleFrame];
         navigationBarSnapshot.image = [self.navigationController.navigationBar snapshotImageClipsToBounds:NO];
         self.navigationBarSnapshotView = navigationBarSnapshot;
     }
@@ -173,6 +172,8 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
     if (self.navigationBarSnapshotView && !self.navigationBarSnapshotView.superview) {
         [self.view addSubview:self.navigationBarSnapshotView];
     }
+    
+    [self sendNavigationBarToBackIfNeeded];
 }
 
 - (void)yr_viewDidAppear:(BOOL)animated
@@ -184,7 +185,7 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
     }
     
     if ([self shouldGenerateNavigationBarImageView] && !self.navigationBarSnapshotView) {
-        UIImageView *navigationBarSnapshot = [[UIImageView alloc] initWithFrame:self.navigationController.navigationBar.visibleBoundry];
+        UIImageView *navigationBarSnapshot = [[UIImageView alloc] initWithFrame:self.navigationController.navigationBar.visibleFrame];
         navigationBarSnapshot.image = [self.navigationController.navigationBar snapshotImageClipsToBounds:NO];
         self.navigationBarSnapshotView = navigationBarSnapshot;
     }
@@ -198,6 +199,16 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
     self.navigationController.panGestureRecognizer.enabled = !self.yr_interactivePopDisabled;
     
     [self.navigationController.view bringSubviewToFront:self.navigationController.navigationBar];
+}
+
+- (void)sendNavigationBarToBackIfNeeded
+{
+    id<UIViewControllerTransitionCoordinator> transitionCoordinator = self.transitionCoordinator;
+    UIView *fromView = [transitionCoordinator viewForKey:UITransitionContextFromViewKey];
+    UIView *toView = [transitionCoordinator viewForKey:UITransitionContextToViewKey];
+    if (CGRectEqualToRect(fromView.frame, [UIScreen mainScreen].bounds) && CGRectEqualToRect(toView.frame, [UIScreen mainScreen].bounds)) {
+        [self.navigationController.view sendSubviewToBack:self.navigationController.navigationBar];
+    }
 }
 
 - (void)savaNavigationBarStateIfNeeded
@@ -225,7 +236,21 @@ ASSOCIATED(navigationBarState, setNavigationBarState, YRNavigationBarState *, OB
 
 - (BOOL)shouldGenerateNavigationBarImageView
 {
-    return (self.navigationController && !self.navigationBarSnapshotView && !self.yr_prefersNavigationBarHidden);
+    if (!self.navigationController || self.yr_prefersNavigationBarHidden) {
+        return NO;
+    }
+    // ignore container view controller
+    if ([self isKindOfClass:UINavigationController.class] || [self isKindOfClass:UITabBarController.class]) {
+        return NO;
+    }
+    // ignore child view controller
+    if (!self.parentViewController || ![self.navigationController.childViewControllers containsObject:self]) {
+        return NO;
+    }
+    if (!CGRectEqualToRect(self.view.frame, [UIScreen mainScreen].bounds)) {
+        return NO;
+    }
+    return YES;
 }
 
 @end

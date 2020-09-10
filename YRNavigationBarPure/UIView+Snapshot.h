@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (ext)
+@interface UIView (Snapshot)
 
-@property (nonatomic, assign) CGRect visibleBoundry;
+@property (nonatomic, assign) CGRect visibleFrame;
 
 - (UIImage *)snapshotImageClipsToBounds:(BOOL)clipsToBounds;
 

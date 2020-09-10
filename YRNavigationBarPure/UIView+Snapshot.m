@@ -11,32 +11,32 @@
 
 @interface UIView ()
 
-@property (nonatomic, assign) CGRect p_visibleBoundry;
+@property (nonatomic, assign) CGRect p_visibleFrame;
 
 @end
 
-@implementation UIView (ext)
+@implementation UIView (Snapshot)
 
-- (CGRect)p_visibleBoundry
+- (CGRect)p_visibleFrame
 {
-    return [objc_getAssociatedObject(self, @selector(p_visibleBoundry)) CGRectValue];
+    return [objc_getAssociatedObject(self, @selector(p_visibleFrame)) CGRectValue];
 }
 
-- (void)setP_visibleBoundry:(CGRect)p_visibleBoundry
+- (void)setP_visibleFrame:(CGRect)p_visibleFrame
 {
-    objc_setAssociatedObject(self, @selector(p_visibleBoundry), [NSValue valueWithCGRect:p_visibleBoundry], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(p_visibleFrame), [NSValue valueWithCGRect:p_visibleFrame], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (CGRect)visibleBoundry
+- (CGRect)visibleFrame
 {
-    self.p_visibleBoundry = self.frame;
+    self.p_visibleFrame = self.frame;
     [self _caculateVisibleBoundry:self];
-    return self.p_visibleBoundry;
+    return self.p_visibleFrame;
 }
 
-- (void)setVisibleBoundry:(CGRect)visibleBoundry
+- (void)setVisibleFrame:(CGRect)visibleFrame
 {
-    objc_setAssociatedObject(self, @selector(visibleBoundry), [NSValue valueWithCGRect:visibleBoundry], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(visibleFrame), [NSValue valueWithCGRect:visibleFrame], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (UIImage *)snapshotImageClipsToBounds:(BOOL)clipsToBounds
@@ -48,11 +48,11 @@
         UIGraphicsEndImageContext();
         return snap;
     } else {
-        UIGraphicsBeginImageContextWithOptions(self.visibleBoundry.size, self.opaque, 0);
+        UIGraphicsBeginImageContextWithOptions(self.visibleFrame.size, self.opaque, 0);
         CGContextRef context = UIGraphicsGetCurrentContext();
-        self.p_visibleBoundry = self.frame;
+        self.p_visibleFrame = self.frame;
         [self _caculateVisibleBoundry:self];
-        CGContextTranslateCTM(context, self.frame.origin.x - self.p_visibleBoundry.origin.x, self.frame.origin.y - self.p_visibleBoundry.origin.y);
+        CGContextTranslateCTM(context, self.frame.origin.x - self.p_visibleFrame.origin.x, self.frame.origin.y - self.p_visibleFrame.origin.y);
         [self.layer renderInContext:UIGraphicsGetCurrentContext()];
         UIImage *snap = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
@@ -63,8 +63,8 @@
 - (void)_caculateVisibleBoundry:(UIView *)view
 {
     if (view.subviews.count == 0) {
-        CGRect subRect = [self.superview convertRect:view.bounds fromView:view];
-        self.p_visibleBoundry = CGRectUnion(self.p_visibleBoundry, subRect);
+        CGRect subRect = [view convertRect:view.bounds toView:self.superview];
+        self.p_visibleFrame = CGRectUnion(self.p_visibleFrame, subRect);
     }
     for (UIView *subView in view.subviews) {
         [self _caculateVisibleBoundry:subView];

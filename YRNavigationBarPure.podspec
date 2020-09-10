@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '9.0'
   
   spec.name         = "YRNavigationBarPure"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "Global navigation bar pure transition"
   spec.homepage     = "https://github.com/zongmumask/YRNavigationBarPure.git"
   spec.author       = { "Daniel Hu" => "zongmumask@gmail.com" }
